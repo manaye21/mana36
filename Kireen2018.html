@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+<meta http-equiv="content type" content="text/html;charset=iso-8859-1" />
+<title> Manaye Homepage</title>
+
+<style type="text/css">
+/* Global style defined */
+   *{
+    pending:0;
+    margin:2;
+	
+	} 
+	
+body {
+    font-family: ariel,italic,sans-serif; /*note: this line tells browser the order to search for fonts*/
+	font-size: 1em;
+	line-height: 1.25em;
+	color: black;
+	background-color: #ccccff;
+	height: 100%;
+	 }
+	 
+	 
+	 
+/*set the appropriate color pattern for the general links withen the website */
+a:link {
+    color:maroon;
+ 	font-weight: bold;
+	 
+	 }
+	 
+a:visited {
+	color: purple;
+	 }
+	 
+a:hover {
+	color:#ffff33;           /* A type of yellow color */
+	background-color: #ead5d4
+	 }
+	 /* set the generic styles through the use of independent classes */
+
+style1 {
+    font-size: 48px;
+	font-weight: bold;
+	font-family: Arial, Italic, sans-serif
+	 }
+style2 {
+    font-size: 16px;
+	font-family: Arial, San-serif
+	 }
+style3 {
+    font-size: 14px;
+	font-family: Arial, Italic, sans-serif;
+	 }
+style4 {
+    font-size: 14px;
+	font-family: Arial, Italic, sans-serif;
+	text-align: center;
+	 }
+/* set the generic style for display of images through the use of dependent classes */
+img.leftAlign{
+    background-color:white;
+	border: solid 15px #006699;
+	float: left;                /*textual content will float to the right of the image. */
+	padding: 10px
+	margin: 10px 25px 10px 5px;
+	 }
+	 
+img.centerAlign{
+     background-color:white;
+	 border: solid 1px #b09c9d;
+	 text-align: center;                /* image will be centerd. text above and below image. */
+	 padding: 10px
+	 margin: 10px 5px 10px 25px;
+	 }
+img.rightAlign{
+     background-color:white;
+	 border: solid 1px #b09c9d;
+	 float: right;                /*textual content will float to the left of the image. */
+	 padding: 10px
+	 margin: 10px 5px 10px 25px;
+	 }
+h1 {
+	 color: navy;
+	 text-align: center;
+	 }
+
+h2 {
+     color:navy
+	 text-align: center;
+	 }
+
+h3 {	 
+	 color:blue
+	 text-align: center
+     }
+
+h4 {
+    
+	 color:green
+	 text-align: left
+	 }
+h5 {
+    
+	 color:red
+	 text-align: right
+	 }
+/* CSS for header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5f5f5;
+}
+
+.header .logo {
+  font-size: 25px;
+  font-family: 'Sriracha', cursive;
+  color: #000;
+  text-decoration: none;
+  margin-left: 30px;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f5f5f5;
+  margin-right: 20px;
+}
+
+.nav-items a {
+  text-decoration: none;
+  color: #000;
+  padding: 35px 20px;
+}
+/* CSS for main section */
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 520px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.intro h1 {
+  font-family: sans-serif;
+  font-size: 60px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.intro p {
+  font-size: 20px;
+  color: #d1d1d1;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.intro button {
+  background-color: #5edaf0;
+  color: #000;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4)
+}
+
+.achievements {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 80px;
+}
+
+.achievements .work {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.achievements .work i {
+  width: fit-content;
+  font-size: 50px;
+  color: #333333;
+  border-radius: 50%;
+  border: 2px solid #333333;
+  padding: 12px;
+}
+
+.achievements .work .work-heading {
+  font-size: 20px;
+  color: #333333;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+
+.achievements .work .work-text {
+  font-size: 15px;
+  color: #585858;
+  margin: 10px 0;
+}
+
+.about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 80px;
+  border-top: 2px solid #eeeeee;
+}
+
+.about-me img {
+  width: 500px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.about-me-text h2 {
+  font-size: 30px;
+  color: #333333;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.about-me-text p {
+  font-size: 15px;
+  color: #585858;
+  margin: 10px 0;
+}
+/* CSS for footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #302f49;
+  padding: 40px 80px;
+}
+
+.footer .copy {
+  color: #fff;
+}
+
+.bottom-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.bottom-links .links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.bottom-links .links span {
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+
+.bottom-links .links a {
+  text-decoration: none;
+  color: #a1a1a1;
+  padding: 10px 20px;
+}	 
+	 
+	 
+</style>
+</head>	
+
+
+<body>
+
+<p><br /><br /><br /></p>
+
+<h1>Manaye Geremew.</h1>
+<b><i>Manaye Geremew</b></i>
+<h1>Manaye Geremew.</h1>
+<div class="clock">
+  <button onclick="pressEnter()">Enter</button>
+</div>
+
+<p><br /><br /><br /></p>
+<div class="container">
+<h3>web registration form with varification</h3>
+<form name="registration" class="registartion-form" onsubmit="return form validation()">
+<table>
+      <tr>
+        <td><label for="firstname">First Name:</label></td>
+        <td><input type="text" name="first name" id="name" placeholder="your first name"></td>
+      </tr>
+	  <tr>
+      <td><label for="secondname">Second Name:</label></td>
+        <td><input type="text" name="second name" id="second name" placeholder="your second name"></td>
+	  </tr>
+	  <tr>
+        <td><label for="email">Email:</label></td>
+        <td><input type="text" name="email" id="email" placeholder="your email"></td>
+      </tr>
+      <tr>
+        <td><label for="password">Password:</label></td>
+        <td><input type="password" name="password" id="password"></td>
+      </tr>
+      <tr>
+        <td><label for="phoneNumber">Phone Number:</label></td>
+        <td><input type="number" name="phoneNumber" id="phoneNumber"></td>
+      </tr>
+      <tr>
+        <td><label for="gender">Gender:</label></td>
+        <td>Male: <input type="radio" name="gender" value="male">
+          Female: <input type="radio" name="gender" value="female">
+		  
+          Other: <input type="radio" name="gender" value="other"></td>
+		  
+      </tr>
+      <tr>
+        <td><label for="language">language</label></td>
+        <td>
+          <select name="language" id="language">
+            <option value="">Select language</option>
+            <option value="English">English</option>
+			<option value="Amharic">አማርኛ</option>
+            <option value="Spanish">Spanish</option>
+            <option value="Hindi">Hindi</option>
+            <option value="Arabic">Arabic</option>
+            <option value="Russian">Russian</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="zipcode">Zip Code:</label></td>
+        <td><input type="number" name="zipcode" id="zipcode"></td>
+      </tr>
+      <tr>
+        <td><label for="about">About:</label></td>
+        <td><textarea name="about" id="about" placeholder="Write about yourself..."></textarea></td>
+      </tr>
+      <tr>
+        <td colspan="2"><input type="submit" class="submit" value="Register" /></td>
+      </tr>
+	  <tr><label for="createaccount">Create Account:</label></td>
+	  </tr>
+    </table>
+  </form>
+</div>
+  <form name="registration" class="registartion-form" onsubmit="return formValidation()">
+  <label for="username">Username:</label>
+  <input type="text" name="username" id="username" />
+  <label for="password">Password:</label>
+  <input type="password" name="password" id="password" />
+  <br  />
+  <input type="radio" name="gender" value="male" />Male<br  />
+  <input type="radio" name="gender" value="female" />Female<br />
+  <input type="radio" name="gender" value="other" />Other
+  <input list="Options" />
+  <datalist id="Options">
+    <option value="Option1"></option>
+    <option value="Option2"></option>
+    <option value="Option3"></option>
+  </datalist>
+
+  <input type="submit" value="Submit" />
+  <input type="color" />
+  <input type="checkbox" name="correct" value="correct" />Correct
+</form>
+
+<p><img class="leftalign" src="man.jpg" alt="manaye" width="100" height="50" /></p>
+<p class="style3">Ethiopia is one of the best country to live
+ <a href="#anchor1">performance </a>and one of the most ancient
+ state in the world the<em>international organizition agency 
+ roadmap crisis</em>Generally the world could admit strong motto <a /href></ p>
+<p><br /><br /><br /></p>
+
+
+
+
+
+<h2><strong>Address</strong></h2>
+
+<p class="style4">Department of communication</p>
+<p class="style4">Department of civilA</p>
+<p class="style4">Department of civilB</p>
+<p class="style4">Department of civilC</p>
+
+
+
+<p><br /><br /><br /></p>
+
+
+
+
+<h2><strong>professional Experience</strong></h2>
+<p class="style4">Associet p</p>
+<p class="style4">Training and Instruction1</p>
+<p class="style4">Training and Instruction2</p>
+<p class="style4">Training and Instruction3</p>
+
+
+
+
+<p><br /><br /><br /></p>
+
+
+<h2><strong>Educational background</strong></h2>
+<p class="style4">Addis Ababa uv</p>
+<p class="style4">AAU</p>
+<p class="style4">AAiT</p>
+<p class="style4">AAMN</p>
+
+
+<p><br /><br /><br /></p>
+
+
+
+
+
+<h1><strong>Important links regarding
+ <p><br/></p>
+ performance Improvement</strong></h2>
+<p><br /><br /><br /></p>
+
+<p class="style3">To learn more info.</p>
+<p><br /></p>
+<p class="style3">To learn more info2 go to: <a href="http://www.mana36.com">human performance</a></p>
+<p><br /></p>
+<p class="style3">To obtian specific  more info3. <a href="http://www.mana32.com"> again</a></p>
+<p><br /></p>
+
+<p ID="anchor1">
+<p class="style3">If you have question about this page 
+contact <a href="manaye2003@gmail.com">Manaye</a>.</p>
+<br /><br />
+<p><a href="#top">Back to Top</a></p>
+
+
+
+
+</body>
+
+</html xmlns="http://www.W3.org/1999/xhtml" lang="en" xml:lang="en">
